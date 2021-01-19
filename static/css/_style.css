@@ -1,0 +1,165 @@
+#wrapper {
+  background-color: #0b0a13;
+  background-position: 50% 0px;
+  width: 984px;
+  margin: 0px auto 0 auto;
+  text-align: center;
+}
+
+#header {
+  background-color: #0b0a13;
+  width: 960px;
+  height: 60px;
+  margin: 0 5px 2px 5px;
+  text-align: left;
+  display: block;
+  position: relative;
+}
+
+body {
+  background-color: #0b0a13;
+}
+
+#navbar > .headlink {
+  color:black;
+  text-decoration:none;
+}
+
+#navbar > .headlink > .head {
+  display: inline-block;
+  font-weight: 500;
+  font-family: serif;
+  color: white;
+  padding: 2px;
+}
+
+#navbar > #navbadge {
+  vertical-align: top;
+}
+
+#selected-image {
+  margin: auto;
+  width: 360;
+  height: 360;
+  display: block;
+}
+
+#prediction {
+  position: relative;
+  left: 115px;
+  padding: 30px;
+  color: white;
+  bottom: 6px;
+}
+
+#prob_1 {
+  position: relative;
+  left: 145px;
+  bottom: 23px;
+  color: white;
+}
+
+#prob_2 {
+  position: relative;
+  left: 145px;
+  bottom: 9px;
+  color: white;
+}
+
+#chart1 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 82px;
+  left: 335px;
+}
+
+#chart2 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 70px;
+  left: 335px;
+}
+
+.card {
+  border: none;
+}
+
+#caution {
+  text-align: left;
+  position: relative;
+  margin: auto;
+  bottom: 55px;
+  width:71%;
+}
+
+#headcaution {
+  height:35;
+  background-color: #8a0303;
+}
+
+#buttoncaution {
+  position: relative;
+  top: -9px;
+  padding: 0;
+  color:white;
+  text-decoration:none;
+}
+
+#buttoncaution:hover{
+  text-decoration: underline;
+}
+
+#bodycaution {
+  position: relative;
+  text-align: justify;
+  font-size: 17;
+}
+
+#cardcaution {
+  background-color: #8a0303;
+  color: white;
+  border-top: 1px solid dimgray;
+}
+
+.accordion>.card {
+  background-color: #0b0a13;
+}
+
+#selectimage {
+  color: black;
+  position: relative;
+  width:71%;
+  left: 139px;
+  bottom: 44px;
+}
+
+#selectimagelabel {
+  background-color: #0b0a13;
+  color: white;
+}
+
+.custom-file-label{
+  border: 1px solid dimgray;
+}
+
+.custom-file-label::after{
+  background-color: #0b0a13;
+  color : white;
+}
+
+#predictbutton {
+  position: relative;
+  text-align: center;
+  bottom: 29px;
+}
+
+#footer{
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 799px;
+  width: 100%;
+  height: 2.5rem;
+}

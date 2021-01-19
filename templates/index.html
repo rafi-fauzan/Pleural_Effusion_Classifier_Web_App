@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Lung Disease Classifier</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/css/_style.css?q=1217523423412445666244311">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<div id="navbar">
+				<a class="headlink" href="http://127.0.0.1:5000/index">
+					<h4 class="head">Lung Diseases Classifier</h4>
+				</a>
+				<h6 id="navbadge" class="badge badge-pill badge-info">pre-alpha</h6>
+			</div>
+		</nav>
+
+		<div id="wrapper">
+			<div id="header">
+
+				<a href= "#" onClick="this.href='/x-ray?t=' + (new Date().getTime());" title="Click here to open the image" target="_blank">
+					<img id="selected-image" src="static\img\lung.png"/>
+				</a>
+
+				<h5 id="prediction">Diagnosis :</h5>
+				<h6><a id="prob_1" href= "#" onClick="this.href='/Primary-Diagnosis?t=' + (new Date().getTime());" title="Click here to show heatmap" target="_blank" >prob_1</a><h6>
+					<h6><a id="prob_2" href= "#" onClick="this.href='/Other-Diagnosis?t=' + (new Date().getTime());" title="Click here to show heatmap" target="_blank">prob_2</a></h6>
+					<div id="chart1">
+						<canvas id="chart_1" width="1" height="1"></canvas>
+					</div>
+					<div id="chart2">
+						<canvas id="chart_2" width="1" height="1"></canvas>
+					</div>
+
+					<div class="accordion" id="caution">
+						<div class="card">
+							<div class="card-header" id="headcaution">
+								<h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="buttoncaution" title="Click here to hide/show the panel">
+										<b>Caution !</b>
+									</button>
+								</h5>
+							</div>
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#caution">
+								<div class="card-body" id="cardcaution">
+									<p id="bodycaution">
+										This tool does not provide real case medical diagnosis; it is currently under development and intended for <b>research purposes only</b>.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="custom-file" id="selectimage">
+						<input id="image-selector" type="file" class="custom-file-input" required>
+						<label class="custom-file-label" for="image-selector" id = "selectimagelabel">Choose an X-ray Image... (.png)</label>
+					</div>
+
+					<div id="imagemodal">
+						<span id="closemodal">&times;</span>
+						<img id="imagecontent">
+					</div>
+
+					<div id="predictbutton">
+						<button class="btn btn-outline-primary" id="predict-button">
+							Analyse
+						</button>
+					</div>
+
+					<footer id="footer">
+					</footer>
+				</body>
+
+				<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+				<script type="text/javascript" src="static/js/_script.js?q=12177466587232354542367362"></script>
